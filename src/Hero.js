@@ -8,28 +8,25 @@ function Hero(props) {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
-  HeroDiv = props.theme;
-
   return (
-    <HeroDiv>
-      <div className="heroContainer">
-        <header>
-          <AnchorLink class="headerLink" href="#about">
-            About
-          </AnchorLink>
-          <AnchorLink class="headerLink" href="#projects">
-            Projects
-          </AnchorLink>
-          <AnchorLink class="headerLink" href="#resume">
-            Resume
-          </AnchorLink>
-          <AnchorLink class="headerLink" href="#contact">
-            Contact
-          </AnchorLink>
-        </header>
-        <div className="heroName">
-          <h1>BJ Collins</h1>
-          {/* <div className="dropdownContainer">
+    <div className="heroContainer">
+      <header>
+        <AnchorLink class="headerLink" href="#about">
+          About
+        </AnchorLink>
+        <AnchorLink class="headerLink" href="#projects">
+          Projects
+        </AnchorLink>
+        <AnchorLink class="headerLink" href="#resume">
+          Resume
+        </AnchorLink>
+        <AnchorLink class="headerLink" href="#contact">
+          Contact
+        </AnchorLink>
+      </header>
+      <div className="heroName">
+        <h1>BJ Collins</h1>
+        {/* <div className="dropdownContainer">
             <div className="dropdown">
               <button onClick={myFunction}>Choose a theme...</button>
               <div id="myDropdown" class="dropdown-content">
@@ -38,13 +35,10 @@ function Hero(props) {
               </div>
             </div>
           </div> */}
-          <h2>Psst...there's more down here...</h2>
-        </div>
+        <h3>Psst...there's more down here...</h3>
       </div>
-    </HeroDiv>
+    </div>
   );
 }
 
 export default Hero;
-
-var HeroDiv;
