@@ -9,9 +9,9 @@ function About() {
         I am a full stack developer in the Denver area interested in creating
         unique and amazing things using bleeding edge technologies. I have a
         love for problem-solving and working in teams of people with different
-        skills to create solutions to interesting and difficult problems. I love
-        being a developer as much as I love helping people become the developer
-        they want to be.
+        skills to create solutions to interesting and difficult problems. My
+        outlook on development is to always be pushing the boundaries of what I
+        know and what is possible.
       </p>
     </div>
   );
