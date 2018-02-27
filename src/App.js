@@ -22,6 +22,9 @@ class App extends Component {
   }
 
   RainbOverload = styled.div`
+    * {
+      font-family: "Titillium Web", sans-serif;
+    }
     button {
       cursor: pointer;
       color: #fff;
@@ -479,6 +482,62 @@ class App extends Component {
         background-position: 0% 50%;
       }
     }
+
+    @media (max-width: 1200px) {
+      .projects h2 {
+        display: none;
+      }
+      .about p {
+        line-height: 2rem;
+      }
+    }
+
+    @media (max-width: 950px) {
+      .about p {
+        line-height: 1.5rem;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .about {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .about h2 {
+        text-align: center;
+      }
+
+      .about p {
+        text-align: center;
+        margin: 1rem;
+        line-height: 1.8rem;
+      }
+
+      .projects {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .projects a,
+      .projects img {
+        width: 100%;
+      }
+
+      .resume {
+        width: 100%;
+        height: auto;
+      }
+
+      .resume h2 {
+        display: none;
+      }
+
+      .resume img {
+        width: 100%;
+        height: auto;
+      }
+    }
   `;
 
   Crayties = styled.div`
@@ -549,7 +608,7 @@ class App extends Component {
     h2,
     a,
     button {
-      font-family: "Permanent Marker", cursive;
+      font-family: "Permanent Marker", sans-serif;
       font-variant: small-caps;
       background-image: -webkit-linear-gradient(#ff0ff8 0%, #f9f9f7 100%);
       -webkit-background-clip: text;
