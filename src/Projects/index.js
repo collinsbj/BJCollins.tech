@@ -5,33 +5,37 @@ import project3pic from "./michael-mroczek-199392.jpg";
 import bgimage from "../seamless-background-80s-.jpg";
 import readativity from "./Readativity.png";
 
-function Projects() {
+function Projects(props) {
+  const ProjectsDiv = props.theme;
+
   return (
-    <div className="projects">
-      <a
-        target="_blank"
-        href="https://readativity-app.herokuapp.com"
-        className="container"
-      >
-        <img src={readativity} alt="Readativity" />
-        <div className="overlay">
-          <div className="text">Readativity</div>
-        </div>
-      </a>
-      <a className="container">
-        <img src={project2pic} alt="project 2" />
-        <div className="overlay">
-          <div className="text">Coming Soon</div>
-        </div>
-      </a>
-      <a className="container">
-        <img src={project3pic} alt="project 3" />
-        <div className="overlay">
-          <div className="text">Coming Soon</div>
-        </div>
-      </a>
-      <h2>Projects</h2>
-    </div>
+    <ProjectsDiv>
+      <div id="projects" className="projects">
+        <a
+          target="_blank"
+          href="https://readativity-app.herokuapp.com"
+          className="container"
+        >
+          <img src={readativity} alt="Readativity" />
+          <div className="overlay">
+            <div className="text">Readativity</div>
+          </div>
+        </a>
+        <a className="container">
+          <img src={project2pic} alt="project 2" />
+          <div className="overlay">
+            <div className="text">Coming Soon</div>
+          </div>
+        </a>
+        <a className="container">
+          <img src={project3pic} alt="project 3" />
+          <div className="overlay">
+            <div className="text">Coming Soon</div>
+          </div>
+        </a>
+        <h2>Projects</h2>
+      </div>
+    </ProjectsDiv>
   );
 }
 

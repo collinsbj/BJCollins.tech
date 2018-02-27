@@ -1,12 +1,15 @@
 import React from "react";
 import resumepng from "./Resume.png";
 
-function Resume() {
+function Resume(props) {
+  const ResumeDiv = props.theme;
   return (
-    <div className="resume">
-      <h2>Resume</h2>
-      <img src={resumepng} alt="resume" />
-    </div>
+    <ResumeDiv>
+      <div id="resume" className="resume">
+        <h2>Resume</h2>
+        <img src={resumepng} alt="resume" />
+      </div>
+    </ResumeDiv>
   );
 }
 

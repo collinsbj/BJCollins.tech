@@ -4,22 +4,26 @@ import githubimg from "./github-logo.png";
 import linkedinimg from "./linkedin.png";
 import emailimg from "./opened-email-envelope.png";
 
-function Contact() {
+function Contact(props) {
+  const ContactDiv = props.theme;
+
   return (
-    <div className="contact">
-      <h2>Contact Me</h2>
-      <div>
-        <a href="https://github.com/collinsbj">
-          <img src={githubimg} />
-        </a>
-        <a href="https://www.linkedin.com/in/bjcollinswebdev/">
-          <img src={linkedinimg} />
-        </a>
-        <a href="mailto:collinsbj@me.com">
-          <img src={emailimg} />
-        </a>
+    <ContactDiv>
+      <div id="contact" className="contact">
+        <h2>Contact Me</h2>
+        <div>
+          <a href="https://github.com/collinsbj">
+            <img src={githubimg} />
+          </a>
+          <a href="https://www.linkedin.com/in/bjcollinswebdev/">
+            <img src={linkedinimg} />
+          </a>
+          <a href="mailto:collinsbj@me.com">
+            <img src={emailimg} />
+          </a>
+        </div>
       </div>
-    </div>
+    </ContactDiv>
   );
 }
 
