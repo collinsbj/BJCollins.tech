@@ -259,7 +259,24 @@ class App extends Component {
       -webkit-transition: 0.5s ease;
       -o-transition: 0.5s ease;
       transition: 0.5s ease;
-      background-color: #008cba;
+      background: -webkit-linear-gradient(
+        135deg,
+        #23a6d5,
+        #23d5ab,
+        #ee7752,
+        #e73c7e
+      );
+      background: -o-linear-gradient(
+        135deg,
+        #23a6d5,
+        #23d5ab,
+        #ee7752,
+        #e73c7e
+      );
+      background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752, #e73c7e);
+      -webkit-animation: Gradient 15s ease infinite;
+      animation: Gradient 15s ease infinite;
+      background-size: 400% 400%;
     }
 
     .projects {
@@ -267,6 +284,7 @@ class App extends Component {
       display: -ms-flexbox;
       display: flex;
       height: 30vh;
+      width: 100vw;
       background: -webkit-linear-gradient(
         135deg,
         #23a6d5,
@@ -484,7 +502,8 @@ class App extends Component {
     }
 
     @media (max-width: 1200px) {
-      .projects h2 {
+      .projects h2,
+      .resume h2 {
         display: none;
       }
       .about p {
@@ -496,9 +515,21 @@ class App extends Component {
       .about p {
         line-height: 1.5rem;
       }
+
+      .resume {
+        height: auto;
+      }
+
+      .resume .container {
+        height: auto;
+      }
     }
 
     @media (max-width: 450px) {
+      h3 {
+        text-align: center;
+      }
+
       .about {
         flex-direction: column;
         height: auto;
@@ -506,12 +537,31 @@ class App extends Component {
 
       .about h2 {
         text-align: center;
+        font-size: 40px;
+        margin-top: 2rem;
       }
 
       .about p {
-        text-align: center;
-        margin: 1rem;
+        margin: 2rem;
         line-height: 1.8rem;
+      }
+
+      .contact {
+        height: auto;
+      }
+
+      .contact div {
+        display: flex;
+      }
+
+      .contact h2 {
+        font-size: 40px;
+        margin-top: 2rem;
+      }
+
+      .contact img {
+        height: 40px;
+        width: auto;
       }
 
       .projects {

@@ -1,9 +1,8 @@
 import React from "react";
-import project1pic from "./rawpixel-com-395556.jpg";
-import project2pic from "./pim-chu-261032.jpg";
-import project3pic from "./michael-mroczek-199392.jpg";
 import bgimage from "../seamless-background-80s-.jpg";
-import readativity from "./Readativity.png";
+import Readativity from "./Readativity.png";
+import UBIIT from "./UBIIT.jpg";
+import FitCount from "./FitCount.jpg";
 
 function Projects(props) {
   const ProjectsDiv = props.theme;
@@ -13,24 +12,37 @@ function Projects(props) {
       <div id="projects" className="projects">
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://readativity-app.herokuapp.com"
           className="container"
         >
-          <img src={readativity} alt="Readativity" />
+          <img src={Readativity} alt="Readativity" />
           <div className="overlay">
             <div className="text">Readativity</div>
           </div>
         </a>
-        <a className="container">
-          <img src={project2pic} alt="project 2" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://bindingofisaactracker.firebaseapp.com/"
+          className="container"
+        >
+          <img src={UBIIT} alt="Ultimate Binding of Isaac Item Tracker" />
           <div className="overlay">
-            <div className="text">Coming Soon</div>
+            <div className="text">UBIIT</div>
           </div>
         </a>
-        <a className="container">
-          <img src={project3pic} alt="project 3" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/collinsbj/FitCount"
+          className="container"
+        >
+          <img src={FitCount} alt="FitCount" />
           <div className="overlay">
-            <div className="text">Coming Soon</div>
+            <div className="text">
+              FitCount<br />in progress...
+            </div>
           </div>
         </a>
         <h2>Projects</h2>

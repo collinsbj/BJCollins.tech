@@ -1,8 +1,8 @@
 import React from "react";
 import bgimage from "../seamless-background-80s11-.jpg";
-import githubimg from "./github-logo.png";
-import linkedinimg from "./linkedin.png";
-import emailimg from "./opened-email-envelope.png";
+import GitHubImg from "./github-logo.png";
+import LinkedInImg from "./linkedin.png";
+import EmailImg from "./opened-email-envelope.png";
 
 function Contact(props) {
   const ContactDiv = props.theme;
@@ -13,13 +13,13 @@ function Contact(props) {
         <h2>Contact Me</h2>
         <div>
           <a href="https://github.com/collinsbj">
-            <img src={githubimg} />
+            <img src={GitHubImg} alt="GitHub" />
           </a>
           <a href="https://www.linkedin.com/in/bjcollinswebdev/">
-            <img src={linkedinimg} />
+            <img src={LinkedInImg} alt="LinkedIn" />
           </a>
           <a href="mailto:collinsbj@me.com">
-            <img src={emailimg} />
+            <img src={EmailImg} alt="Email" />
           </a>
         </div>
       </div>
