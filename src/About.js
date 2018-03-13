@@ -1,5 +1,4 @@
 import React from "react";
-import bgImage from "./seamless-background-80s-.jpg";
 
 function About(props) {
   const AboutDiv = props.theme;
@@ -22,33 +21,3 @@ function About(props) {
 }
 
 export default About;
-
-// const eighties = styled.div`
-//   h2 {
-//     transform: rotate(-15deg);
-//     font-size: 65px;
-//     margin-left: 3rem;
-//     align-self: center;
-//     font-family: "Permanent Marker", cursive;
-//     font-variant: small-caps;
-//     background-image: -webkit-linear-gradient(#ff0ff8 0%, #f9f9f7 100%);
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-//   }
-
-//   p {
-//     color: #2bd1fc;
-//     // font-weight: bold;
-//     font-size: 25px;
-//     margin-right: 3rem;
-//     line-height: 2.5rem;
-//   }
-
-//   div {
-//     height: 30vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background: white;
-//   }
-// `;
