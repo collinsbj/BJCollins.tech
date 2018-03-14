@@ -722,6 +722,8 @@ class App extends Component {
       height: 100vh;
       background-image: url(${heroBgImage});
       background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       overflow: hidden;
     }
 
