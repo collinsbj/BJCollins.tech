@@ -1,7 +1,7 @@
 import React from "react";
 import Readativity from "./Readativity.png";
 import UBIIT from "./UBIIT.jpg";
-import FitCount from "./FitCount.jpg";
+import FitCount from "./FitCount.png";
 import TheTippingPoint from "./TheTippingPoint.jpg";
 
 function Projects(props) {
@@ -53,9 +53,7 @@ function Projects(props) {
           >
             <img src={FitCount} alt="FitCount" />
             <div className="overlay">
-              <div className="text">
-                FitCount<br />in progress...
-              </div>
+              <div className="text">FitCount</div>
             </div>
           </a>
         </div>
