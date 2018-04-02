@@ -1,14 +1,14 @@
-# Welcome to BJCollins.tech
+# Welcome to [BJCollins.tech](https://bjcollins.tech)
 
 The portfolio site for BJ Collins, a web developer based in the Denver, CO area.
 
-## Coming Very Soon...
+## Choose a theme
 
-I will be adding a "Choose a Theme" option to the hero section. Over time I will be adding new and distinct themes to the site, and instead of just changing the current theme I will allow visitors to pick which theme they'd like to see.
+You can now choose which theme you'd like to display. Simply click one of the themes under "Try a different theme..." to change the theme that is used for the page...
 
-The name of the current theme is RainbOverload and coming down the pipeline shortly is an 80's theme (working title: The Crayties).
+![](./assets/tryNewTheme.png)
 
-I'd love to have community participation with adding new themes. With that in mind feel free to send me suggestions for new themes as well as submit a pull request if you've made one of your own. Simply create a new CSS file that I can easily link to.
+More themes coming soon!
 
 ## Projects
 
@@ -17,3 +17,5 @@ The Projects section houses the ever-growing list of projects I've worked on as 
 ## Set Up
 
 This site was made using the React front-end framework. To set up this project locally, fork this repo, clone it to your machine locally, and run npm install inside the main folder. This will install all dependencies.
+
+License MIT
